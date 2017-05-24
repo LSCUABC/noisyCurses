@@ -77,8 +77,7 @@ int main(int argc, char **argv)
 	mvwaddstr(w,0,4, "Lista de Reproduccion:");
 
 	//liz
-	mvwprintw(w,1,2,"Pista\t Titulo\t Artista\t Album\t Duracion");
-	
+	//mvwprintw(w,1,2,"Pista\t Titulo\t Artista\t Album\t Duracion");//
 	//liz
 		
 		
