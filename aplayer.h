@@ -33,15 +33,23 @@ int aplayer(WINDOW *m){
 				else
 					--hl;
 			break;
+			
 			case KEY_DOWN:
 				if(hl==7)
 					hl=1;
 				else
 					++hl;				
 			break;
+			
 			case 10:
 				choice=hl;
 			break;
+			
+			case KEY_F(10):
+				hl=rand()%8;
+				choice=hl;
+			break;
+			
 			default: refresh();
 			break;
 		}
