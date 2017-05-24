@@ -15,7 +15,7 @@ void lector(char arch[],WINDOW *m,WINDOW *p,WINDOW *l){
 	FILE *f;
 	WINDOW *opcion;
 	int np=0,hl=0,c=0,a=2,b=2,x=0,xx=0,yy=0;
-	char linea[1024],ch;
+	char linea[1024],ch,liz[]="";
 	
 	getmaxyx(stdscr,yy,xx);
 	
@@ -25,6 +25,12 @@ void lector(char arch[],WINDOW *m,WINDOW *p,WINDOW *l){
 		perror("No existe el archivo");
 		return;
 	}
+	//liz
+	
+	mvwprintw(l,1,24-strlen(liz));
+	//liz
+	
+	
 	do{
 				
         fgets(n[x].a,sizeof(n[x].a),f);
