@@ -76,6 +76,13 @@ int main(int argc, char **argv)
 	mvwprintw(ctrl,1,2,"-| Ingresa Pista a Reproducir |-");
 	mvwaddstr(w,0,4, "Lista de Reproduccion:");
 
+	//liz
+	mvwprintw(w,1,2,"Pista\t Titulo\t Artista\t Album\t Duracion");
+	
+	//liz
+		
+		
+		
 	lector("wav.lst",ctrl,np,w); // lector lee achivo lista y captura opcion d usuario
 	
 	}while(1);
