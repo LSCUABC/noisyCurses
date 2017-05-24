@@ -15,7 +15,7 @@ int n_choices=6;
 void menu(WINDOW *c,int op);
 int aplayer(WINDOW *m){
 		int hl=1,choice=0,xx,yy,c;	
-		
+		int ra=0;
 		getmaxyx(stdscr,yy,xx);
 		
 		keypad(m,TRUE);
