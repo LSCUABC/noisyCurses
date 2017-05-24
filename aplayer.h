@@ -68,7 +68,6 @@ menu(WINDOW *c,int op){
 	int i,y,x,xx,yy;
 	
 	getmaxyx(stdscr,yy,xx);
-	
 	i=y=2;
 	for(x=0;x<7;++x){
 		if(op==x+1){
