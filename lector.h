@@ -27,7 +27,7 @@ void lector(char arch[],WINDOW *m,WINDOW *p,WINDOW *l){
 	}
 	//liz
 	
-	mvwprintw(l,1,24-(strlen(liz)/2),"%s",liz);
+	mvwprintw(l,1,24-(strlen(liz)/2),"%s",liz); //el strlen calcula el numero de caracteres que tiene la cadena 
 	//liz
 	
 	
