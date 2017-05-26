@@ -67,9 +67,9 @@ int main(int argc, char **argv)
 	
 	ctrl=subwin(stdscr,yy/4,xx/2,yy/2,((xx/2)-(xx/4))); //creamos la sub-ventana ctrl dentro de stdscr
 	box(ctrl,0,0);					    //cajita a ctrl
-	
+	//
 	//Titulo a las cajas y menus.
-	mvwprintw(stdscr,0,xx/2-12,"NoisyCurses - By Borregs");
+	mvwprintw(stdscr,0,xx/2-12,"NoisyCurses"); 
 	mvwprintw(np,0,4,"En Reproduccion:" );
 	mvwprintw(ctrl,8,4,">");
 	mvwprintw(ctrl,7,4,">>");
@@ -84,7 +84,7 @@ int main(int argc, char **argv)
 		
 	lector("wav.lst",ctrl,np,w); // lector lee achivo lista y captura opcion d usuario
 	
-	}while(1);
+	}while(1); //por siempre
 	endwin();
 		return 0;
 }
