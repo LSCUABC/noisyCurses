@@ -15,7 +15,8 @@ void lector(char arch[],WINDOW *m,WINDOW *p,WINDOW *l){
 	FILE *f;
 	WINDOW *opcion;
 	int np=0,hl=0,c=0,a=2,b=2,x=0,xx=0,yy=0;
-	char linea[1024],ch,liz[5]="PISTA";
+	char linea[1024],ch,can[8]="CANCION",art[8]="ARTISTA",alb[7]="ALBUM";
+
 	
 	getmaxyx(stdscr,yy,xx);
 	
@@ -26,8 +27,10 @@ void lector(char arch[],WINDOW *m,WINDOW *p,WINDOW *l){
 		return;
 	}
 	//liz
-	
-	mvwprintw(l,1,24-(strlen(liz)/2),"%s",liz); //el strlen calcula el numero de caracteres que tiene la cadena 
+		mvwprintw(l,1,24-(strlen(can)/2),"%s",can);
+                mvwprintw(l,1,55-(strlen(art)/2),"%s",art);
+                mvwprintw(l,1,22+(xx/2)-(strlen(alb)/2),"%s",alb);
+
 	//liz
 	
 	
