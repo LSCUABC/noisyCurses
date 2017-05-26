@@ -45,7 +45,7 @@ int aplayer(WINDOW *m){
 				choice=hl;
 			break;
 			
-			case KEY_F(10):
+			case KEY_F(10): //key utiliza para que el F10 es una seleccion de canciones random
 				hl=rand()%8;
 				choice=hl;
 			break;
