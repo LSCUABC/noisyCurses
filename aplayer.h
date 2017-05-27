@@ -26,6 +26,7 @@ int aplayer(WINDOW *m){
 		c=wgetch(m);
 		
 		switch(c){
+			
 			case KEY_UP:
 				if(hl==1)
 					hl=7;
@@ -48,8 +49,17 @@ int aplayer(WINDOW *m){
 				hl=rand()%8;
 				choice=hl;
 			break;
-			
-			default: refresh();
+			case KEY_F(8):
+				refresh();
+				system("cp wav.lst wav.now&&cp wav.prev wav.lst &&cp wav.now wav.prev");
+			break;
+			case KEY_F(9):
+				refresh();
+				system("cp wav.lst wav.now&&cp wav.nxt wav.lst&&cp wav.now wav.nxt");
+			break;
+			default:
+		        getmaxyx(stdscr,yy,xx);	
+			refresh();
 			break;
 		}
 		menu(m,hl);
@@ -67,7 +77,7 @@ menu(WINDOW *c,int op){
 	int i,y,x,xx,yy;
 	
 	getmaxyx(stdscr,yy,xx);
-	i=y=2;
+	i=y=3;
 	for(x=0;x<7;++x){
 		if(op==x+1){
 			wattron(c,A_REVERSE);
