@@ -24,36 +24,36 @@ int nplaying(int hl,cancion np, WINDOW *n, WINDOW *l){
 		wrefresh(l);
 		switch(hl){
 			case 1:
-				system("aplay 1.wav 2>log.txt &");
-				mvprintw(3+hl,xx-18,"*");
+				system("aplay 1.wav 2>>log.txt &");
+				mvprintw(4+hl,xx-18,"*");
 			break;
 			case 2:
-				system("aplay 2.wav 2>log.txt &");
-				mvprintw(3+hl,xx-18,"*");
+				system("aplay 2.wav 2>>log.txt &");
+				mvprintw(4+hl,xx-18,"*");
 			break;
 			case 3:
-				system("aplay 3.wav 2>log.txt &");
-				mvprintw(3+hl,xx-18,"*");
+				system("aplay 3.wav 2>>log.txt &");
+				mvprintw(4+hl,xx-18,"*");
 			break;
 			case 4:
-				system("aplay 4.wav 2>log.txt &");
-				mvprintw(3+hl,xx-18,"*");
+				system("aplay 4.wav 2>>log.txt &");
+				mvprintw(4+hl,xx-18,"*");
 			break;
 			case 5:
-				system("aplay 5.wav 2>log.txt &");
-				mvprintw(3+hl,xx-18,"*");
+				system("aplay 5.wav 2>>log.txt &");
+				mvprintw(4+hl,xx-18,"*");
 			break;
 			case 6:
-	            system("aplay 6.wav 2>log.txt &");
-                mvprintw(3+hl,xx-18,"*");
+	            		system("aplay 6.wav 2>>log.txt &");
+                		mvprintw(4+hl,xx-18,"*");
 			break;
 			case 7:
-                system("aplay 7.wav 2>log.txt &");
-                mvprintw(3+hl,xx-18,"*");
+                		system("aplay 7.wav 2>>log.txt &");
+                		mvprintw(4+hl,xx-18,"*");
 			break;
-			}
-	for(x=0;x<=np.m;x++){
-		for(y=0;y<60;y++){
+		}
+		for(x=0;x<=np.m;x++){
+		   for(y=0;y<60;y++){
 			if(y>9)
 				mvwprintw(n,2,8,"[0%d:%d]/[0%d:%d]",x,y,np.m,np.s);
 			else
@@ -83,10 +83,10 @@ int nplaying(int hl,cancion np, WINDOW *n, WINDOW *l){
 			if(y==np.s&&x==np.m)
 				break;
 		}	
-	}
+	  }
 		
 	return 0;
 	
-	};
+    };
 
 #endif
