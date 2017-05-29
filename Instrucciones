@@ -8,6 +8,8 @@ NoisyCurses es un programa con repositorio rodante; sin embargo, esta version es
 compatibilidad con linux 3.13.0-45-generico. Version estable desarollada por metalizz & borregs. 
 Version rodante creada por borregs http://github.com/borregs/noisyCurses/
 
+Este proyecto se encuentra protegido y licenciado bajo la licencia publica GNU Version 2.
+
 Los reproductores se han convertido en un elemento basico en la sociedad, los reproductores sirven 
 para poder escuchar los archivos de tipo audio. este solamente sirve para escuchar pistas(audio) o musica en formato wave.
 
