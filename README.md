@@ -1,6 +1,8 @@
 # noisyCurses
 repruductor de archivos  *.wav con interfaz grafica en ncurses.
 
+https://github.com/LSCUABC/noisyCurses
+
 # Archivos:
 #para descomprimir 
   unzip opus.zip
@@ -15,7 +17,7 @@ Se debe convertir un archivo a la ves y conservar su nombre.
 
 @Metalizz[https://github.com/Metalizz] & @borregs[https://github.com/borregs]
 
-graphicas y estadisticas:
+## graphicas y estadisticas:
 
 Contribuciones de los Desarrolladores: https://github.com/LSCUABC/noisyCurses/graphs/contributors
                                        https://github.com/LSCUABC/noisyCurses/pulse
